@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
 {% block conteudo %}
-DashBoard
+    <h1 class="mt-3 mb-3">Olá {{ user.first_name }} {{ user.last_name}}</h1>
+    {% include 'parciais/_messagens.html' %}
+    <p>
+        O seu nome de usuario é {{user}}
+    </p>
 {% endblock %}
